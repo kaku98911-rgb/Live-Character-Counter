@@ -1,1 +1,0 @@
-# Live-Character-Counter
