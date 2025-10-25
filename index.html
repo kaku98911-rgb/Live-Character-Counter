@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get</title>
+    <style>
+        .abc{
+            text-decoration: none;
+            color: aqua;
+        }
+
+        .box{
+            height: 100px;
+            width: 100px;
+            background-color: aqua;
+        }
+        .add1{
+            animation: move 2s infinite;
+        }
+
+        @keyframes move{
+            0%{
+                margin: 0;
+            }
+            50%{
+                margin-left: 100px;
+            }
+            100%{
+                margin-left: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>hello World</h1>
+    </div>
+
+    <a href="https://www.w3schools.com/" class="abc">Open Link</a>
+    <br>
+    <br>
+    <br>
+    <label for="abc">text</label>
+    <br>
+    <!-- <input type="text" name="abc" id="a"> -->
+    <br>
+    <br>
+    <br>
+
+    <button id="a">Text Change</button>
+    <button id="b">Text pkmplm</button>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores ratione id rem aliquid a facilis ex provident nemo doloribus at temporibus nulla expedita assumenda, dolorum accusamus alias repudiandae illum optio. Enim ipsum delectus, repellendus eius tempora praesentium recusandae consequatur cumque vero corporis nisi, earum accusantium repellat architecto dolorum ex. Totam.</p>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.14.1/jquery-ui.min.js" integrity="sha512-MSOo1aY+3pXCOCdGAYoBZ6YGI0aragoQsg1mKKBHXCYPIWxamwOE7Drh+N5CPgGI5SA9IEKJiPjdfqWFWmZtRA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("#a").click(function(){
+                // let a = $("button").after("<p>Baad Mai After Add Kro Do</p>")
+                //  let b = $("button").before("<p>Paehle Before Add Kro Do</p>")
+
+                //  let a = $("button").append("<p>Baad Mai After Add Kro Do</p>")
+                //  let b = $("button").prepend("<p>Paehle Before Add Kro Do</p>")
+                 $("#a").html("<h1>hello</h1>")
+                 
+
+            })
+            $("#b").click(function(){
+
+            $("#b").text("<h1>hello</h1>")
+             })
+        })
+    </script>
+</body>
+</html>
